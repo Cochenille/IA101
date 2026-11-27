@@ -35,3 +35,19 @@
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
 }
+
+/* Illustration à côté d'un texte (pages de séances) */
+.illustration {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin: 16px 0;
+}
+.illustration img {
+  flex-shrink: 0;
+}
+@media (max-width: 640px) {
+  .illustration {
+    flex-direction: column;
+  }
+}
