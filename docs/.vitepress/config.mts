@@ -9,44 +9,46 @@ export default withMermaid(
     cleanUrls: true,
     title: "IA101",
     description:
-      "Les bases de l'utilisation des outils d'IA — Modules, laboratoires, calendrier et ressources",
+      "Développer avec l'IA de façon professionnelle — Plan de cours, séances, calendrier et projet fil rouge",
     themeConfig: {
       // logo: "/logos/logo.png",
 
       nav: [
+        { text: "Plan de cours", link: "/plan-cours/" },
         { text: "Calendrier", link: "/plan-cours/calendrier" },
         {
-          text: "Modules",
+          text: "Séances",
           items: [
-            { text: "Module 1 — Premiers pas", link: "/modules/01-premiers-pas/" },
+            { text: "1 — Comprendre la machine", link: "/seances/01-comprendre-la-machine" },
+            { text: "2 — Contexte et boucle agentique", link: "/seances/02-contexte-et-boucle-agentique" },
+            { text: "3 — Développement guidé par la spec", link: "/seances/03-developpement-guide-par-la-spec" },
+            { text: "4 — Orchestration et pratique pro", link: "/seances/04-orchestration-et-pratique-pro" },
           ],
         },
+        { text: "Jumelo", link: "https://github.com/Cochenille/Jumelo" },
       ],
 
       sidebar: [
         {
           text: "Documents généraux",
-          items: [{ text: "Calendrier", link: "/plan-cours/calendrier" }],
+          items: [
+            { text: "Plan de cours", link: "/plan-cours/" },
+            { text: "Calendrier", link: "/plan-cours/calendrier" },
+          ],
         },
         {
-          text: "Modules du cours",
+          text: "Séances",
           collapsed: false,
           items: [
-            {
-              text: "Module 1 — Premiers pas",
-              collapsed: false,
-              items: [
-                { text: "Présentation", link: "/modules/01-premiers-pas/" },
-              ],
-            },
+            { text: "1 — Comprendre la machine et bien formuler sa demande", link: "/seances/01-comprendre-la-machine" },
+            { text: "2 — Contexte et boucle agentique", link: "/seances/02-contexte-et-boucle-agentique" },
+            { text: "3 — Développement guidé par la spécification", link: "/seances/03-developpement-guide-par-la-spec" },
+            { text: "4 — Orchestration et pratique professionnelle", link: "/seances/04-orchestration-et-pratique-pro" },
           ],
         },
         {
-          text: "Laboratoires",
-          collapsed: true,
-          items: [
-            { text: "Lab 01 — Premiers échanges", link: "/labs/lab01-premiers-echanges" },
-          ],
+          text: "Projet fil rouge",
+          items: [{ text: "Jumelo sur GitHub", link: "https://github.com/Cochenille/Jumelo" }],
         },
       ],
 
